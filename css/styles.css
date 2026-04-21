@@ -222,6 +222,11 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.logo-icon {
+  border-radius: 6px;
+  object-fit: cover;
+}
+
 .logo-text {
   font-family: var(--font-heading);
   font-size: 1.25rem;
@@ -315,10 +320,9 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* Placeholder hero bg — replace with actual image later */
   background:
     linear-gradient(135deg, rgba(27, 67, 50, 0.88) 0%, rgba(45, 106, 79, 0.82) 100%),
-    url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80') center/cover no-repeat;
+    url('../Assets/photos/92f50e83-b522-46de-b3b3-79ee9494e3c5.jpg') center/cover no-repeat;
   color: var(--white);
   overflow: hidden;
 }
@@ -673,7 +677,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .pricing-cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   margin-bottom: 48px;
 }
@@ -1123,9 +1127,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr;
   gap: 60px;
   align-items: start;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .contact-item {
@@ -1416,6 +1422,10 @@ textarea {
   }
 
   .cladding-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-cards {
     grid-template-columns: repeat(2, 1fr);
   }
 
